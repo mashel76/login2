@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { FaFacebook, FaGithub, FaLinkedinIn, FaRegEnvelope } from "react-icons/fa";
+import {MdLockOutline} from 'react-icons/md';
 export default function Home() {
   return (
     <main className="bg-gray-200 flex flex-col items-center justify-center w-full h-screen flex-1 px-20 text-center">
@@ -28,10 +29,25 @@ export default function Home() {
               pake email juga bisa bang
             </p>
             <div className='flex flex-col items-center'>
-              <div className='bg-gray-200 w-64 p-2 rounded-lg flex items-center'>
+              <div className='bg-gray-200 w-64 p-2 rounded-lg flex items-center mb-3'>
                 <FaRegEnvelope className='text-gray-400 m-1'></FaRegEnvelope>
                 <input type='email' name='email' placeholder='Your Email' className='bg-gray-200 outline-none text-sm font-medium text-black flex-1'/>
-                </div>
+              </div>
+              <div className='bg-gray-200 w-64 p-2 rounded-lg flex items-center mb-3'>
+                <MdLockOutline className='text-gray-400 m-1'></MdLockOutline>
+                <input type='password' name='password' placeholder='Your Password' className='bg-gray-200 outline-none text-sm font-medium text-black flex-1'/>
+              </div>
+              <div className='flex justify-between w-64 mb-5'>
+                <label className='flex items-center text-xs text-black font-semibold'>
+                  <input type='checkbox' name='remember' className='mr-1'/> Remember me
+                </label>
+                <a href='#' className='text-xs text-black font-semibold'>
+                  Forgot Password?
+                </a>
+              </div>
+                <a href='#' className='font-semibold border-2 border-teal-500 rounded-full inline-block px-12 py-2 hover:bg-teal-500 hover:text-white'>
+                  SIGN IN
+                </a>
             </div>
           </div>
         </div>
