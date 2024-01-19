@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <main className="bg-gray-200 flex flex-col items-center justify-center w-full h-screen flex-1 px-20 text-center">
       <div className='bg-white rounded-2xl flex w-2/3 max-w-4xl shadow-lg'>
-        <div className='text-teal-500 w-3/5 p-5'>
-          <div className='text-left font-bold'>
+        <div className=' text-teal-500 w-3/5 p-5'>
+          <div className='text-left font-bold select-none'>
             <span className='text-teal-500'>Mas</span><span className='text-black'>Hel</span>
           </div>
-          <div className='py-10'>
+          <div className='py-10 select-none'>
             <h2 className='text-3xl font-bold text-teal-500 mb-2'>
               Sign in to Account
             </h2>
@@ -51,7 +51,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className='bg-teal-500 w-2/5 rounded-tr-2xl rounded-br-2xl py-36 px-12'>
+        <div className='hidden xl:block bg-teal-500 w-2/5 rounded-tr-2xl rounded-br-2xl py-36 px-12 select-none'>
           <h2 className='text-white font-bold text-3xl mb-2'>
             Join Us!
           </h2>
